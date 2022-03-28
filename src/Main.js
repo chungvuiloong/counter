@@ -3,12 +3,40 @@ import React, { Component } from "react";
 
 class Main extends Component {
   state = {
-    counter: 1000,
+    counter: 0,
   };
 
-  addOneHandler = ()=> {
-    console.log('wow you can really dance');
+  addFiveHandler = ()=> {
+    this.setState({
+      counter: this.state.counter + 5,
+    });
   };
+
+
+  addOneHandler = ()=> {
+    this.setState({
+      counter: this.state.counter + 1,
+    });
+  };
+
+  resetHandler = ()=> {
+    this.setState({
+      counter: this.state.counter == 0,
+    });
+  };
+
+  minusOneHandler = ()=> {
+    this.setState({
+      counter: this.state.counter - 1,
+    });
+  };
+
+  minusFiveHandler = ()=> {
+    this.setState({
+      counter: this.state.counter - 5,
+    });
+  };
+
 
 
     render () {
@@ -19,11 +47,11 @@ class Main extends Component {
             </div>
 
             <div className="button-container">
-            <button type="button" className="button" >Add five</button>
-            <button type="button" className="button">Add one</button>
-            <button type="button" className="button" >Reset</button>
-            <button type="button" className="button" >Remove one</button>
-            <button type="button" className="button"onClick={this.addOneHandler} >Remove five</button>
+            <button type="button" className="button" onClick={this.addFiveHandler}>Add five</button>
+            <button type="button" className="button" onClick={this.addOneHandler}>Add one</button>
+            <button type="button" className="button" onClick={this.resetHandler}>Reset</button>
+            <button type="button" className="button" onClick={this.minusOneHandler}>Remove one</button>
+            <button type="button" className="button" onClick={this.minusFiveHandler}>Remove five</button>
             </div>
 
         </div>
