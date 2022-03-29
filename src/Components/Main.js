@@ -28,7 +28,7 @@ class Main extends Component {
   };
 
   minusOneHandler = ()=> {
-    if (this.state.counter > 5) {
+    if (this.state.counter > 0) {
       this.setState({
         counter: this.state.counter - 1,
       });
@@ -59,7 +59,7 @@ class Main extends Component {
                 <div className = "current-sum">{this.state.counter}</div>
             </div>
 
-            <Button onClick={this.addFiveHandler} value="5"/>
+            {/* <Button onClick={this.addFiveHandler} value="5"/> */}
             <div className="button-container">
             
             <button type="button" className="button" onClick={this.addFiveHandler}>Add five</button>
