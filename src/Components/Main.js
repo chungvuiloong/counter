@@ -1,8 +1,8 @@
 
 import React, { Component } from "react";
 import Button from "./Button";
-import "./Circles.module.css";
-import "./Button.module.css";
+import classes from "./Circles.module.css";
+import classes from "./Button.module.css";
 
 class Main extends Component {
   state = {
