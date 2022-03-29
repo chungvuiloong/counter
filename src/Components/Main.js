@@ -1,6 +1,8 @@
 
 import React, { Component } from "react";
 import Button from "./Button";
+import "./Circles.module.css";
+import "./Button.module.css";
 
 class Main extends Component {
   state = {
@@ -38,15 +40,13 @@ class Main extends Component {
     });
   };
 
-
-
     render () {
       return (
         <div>
-            <div className="circle">
+            <div className="classes.circle">
                 <div className = "current-sum">{this.state.counter}</div>
             </div>
-              
+
             <Button onClick={this.addFiveHandler} value="5"/>
             <div className="button-container">
             

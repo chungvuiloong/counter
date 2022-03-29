@@ -35,17 +35,6 @@
 
 
 
-.circle {
-  margin: 50px auto;
-  height: 300px;
-  width: 300px;
-  border: 2px solid black;
-  border-radius: 300px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .boxes-container {
   height: 50px;
