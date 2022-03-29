@@ -1,0 +1,13 @@
+.header {
+    padding: 0 25px;
+    background-color: #204288;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
