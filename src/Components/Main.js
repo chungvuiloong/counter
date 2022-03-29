@@ -28,21 +28,34 @@ class Main extends Component {
   };
 
   minusOneHandler = ()=> {
-    this.setState({
-      counter: this.state.counter - 1,
-    });
+    if (this.state.counter > 5) {
+      this.setState({
+        counter: this.state.counter - 1,
+      });
+    }
   };
 
   minusFiveHandler = ()=> {
-    this.setState({
-      counter: this.state.counter - 5,
-    });
+    if (this.state.counter > 5) {
+      this.setState({
+        counter: this.state.counter - 5,
+      });
+    }
   };
 
     render () {
+      let className = '';
+
+      if (this.state.counter % 2 == 0) {
+        className = classes.green;
+      } else {
+        className = classes.blue;
+      };
+    
       return (
         <div>
-            <div className={classes.circle}>
+          
+            <div className={`${classes.circle} ${className}`}>
                 <div className = "current-sum">{this.state.counter}</div>
             </div>
 
