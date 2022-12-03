@@ -36,7 +36,7 @@ class Main extends Component {
   };
 
   minusFiveHandler = ()=> {
-    if (this.state.counter > 5) {
+    if (this.state.counter > 5 || this.state.counter == 5) {
       this.setState({
         counter: this.state.counter - 5,
       });
